@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="8dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_light_background"
+        android:backgroundTint="@color/cardview_light_background">
+
+                <TextView
+                    android:id="@+id/tvAuthor"
+                    android:layout_width="99dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Author Name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ivCoverBig"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                    <ImageView
+                        android:id="@+id/ivCoverBig"
+                        android:layout_width="144dp"
+                        android:layout_height="198dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/placeholder" />
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="191dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="tvGenreB tvGenreB tvGenreB tvGenreB tvGenreB tvGenreB "
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/ivCoverBig"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    <Button
+                        android:id="@+id/btnReadNow"
+                        android:layout_width="100dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="106dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="64dp"
+                        android:backgroundTint="@color/colorTitleBg"
+                        android:text="Read Now!"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        app:layout_constraintEnd_toStartOf="@+id/btnShare"
+                        app:layout_constraintHorizontal_bias="0.952"
+                        app:layout_constraintStart_toEndOf="@+id/btnComment"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCoverBig" />
+
+                    <Button
+                        android:id="@+id/btnShare"
+                        android:layout_width="46dp"
+                        android:layout_height="37dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="28dp"
+                        android:background="?attr/actionModeShareDrawable"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCoverBig" />
+
+                    <Button
+                        android:id="@+id/btnComment"
+                        android:layout_width="62dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/icon_comment"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ivCoverBig" />
+
+                    <TextView
+                        android:id="@+id/tvDescription"
+                        android:layout_width="199dp"
+                        android:layout_height="83dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toEndOf="@+id/ivCoverBig"
+                        app:layout_constraintTop_toBottomOf="@+id/tvGenre" />
+
+                <TextView
+                    android:id="@+id/tvGenre"
+                    android:layout_width="0dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Genre"
+                    app:layout_constraintStart_toEndOf="@+id/ivCoverBig"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAuthor"
+                    android:layout_marginStart="20dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</FrameLayout>
